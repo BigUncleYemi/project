@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  background-image: url('http://exfi.info/wp-content/uploads/2018/08/lake-sweden-autumn-sunset-wallpaper-hd-elegant-landscape-4k-ultra-hd-wallpaper-of-lake-sweden-autumn-sunset-wallpaper-hd.jpg');
+  min-height: 100vh;
+  overflow-y: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+}
+
+#overlay {
+  background-image: url('https://html5up.net/uploads/demos/aerial/assets/css/images/overlay-pattern.png'), url('https://html5up.net/uploads/demos/aerial/assets/css/images/overlay.svg');
+  background-color: #2b0f4391;
+  background-position: top left, center center;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  width: 100%;
+  position: fixed;
+}
+
+#intro {
+  height: 50%;
+  margin: auto;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+#intro>h1 {
+  font-size: 5rem;
+  font-weight: 100;
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: 'Lobster', cursive;
+}
+
+#intro>p {
+  font-size: 2.3rem;
+  font-family: 'Poiret One', cursive;
+}
+
+.icons {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 100px;
+}
+
+.icons>li {
+  padding: 2rem;
+  border: 1px solid;
+  margin: 10px 15px;
+  -webkit-transition: transform 1s;
+  transition: transform 1s;
+  -moz-transition: transform 1s;
+  border-radius: 100%;
+}
+
+.icons>li>a {
+  font-size: 1.9rem;
+  color: white;
+  text-decoration: none;
+}
+
+.icon {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  padding-left: 0;
+  margin-bottom: 100px;
+}
+
+.icon>li {
+  padding: 2rem;
+  border: 1px solid;
+  margin: 10px 15px;
+  -webkit-transition: transform 1s;
+  transition: transform 1s;
+  -moz-transition: transform 1s;
+  border-radius: 45px;
+  width: 120px;
+}
+
+.icon > li > a{
+  font-size: 1.9rem;
+  font-family: 'Poiret One', cursive;
+  font-weight: 600;
+}
+
+.icon > li#signup{
+  border-color: transparent;
+  background-color: white;
+}
+
+.icon > li#signup > a{
+  color: #6f5d7d;
+}
+
+.icons>li:hover {
+  transform: scale(1.5, 1.5);
+  background-color: rgba(255, 255, 255, 0.34);
+}
+
+.icon >li:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.footer {
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 3em;
+}
+
+.footer>span {
+  font-family: 'Poiret One', cursive;
+  text-align: center;
+}
+
+.nav {
+  color: white;
+  font-weight: 600;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  font-size: 25px;
+  font-family: 'Poiret One', cursive;
+}
+
+.nav>a {
+  padding: 20px;
+}
+
+.nav>ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+.nav>ul>li {
+  padding: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+.active {
+  animation: active 2s ease-in-out;
+  -webkit-animation: active 2s ease-in-out;
+  -moz-animation: active 2s ease-in-out;
+  filter: blur(5px);
+  box-shadow: 20px 20px 6px rgba(0, 0, 0, 0.64), -20px -20px 6px rgba(0, 0, 0, 0.64)
+}
+
+.bg {
+  width: 50%;
+  height: 60%;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  animation: bg 2.5s ease-in-out;
+  -webkit-animation: bg 2.5s ease-in-out;
+  -moz-animation: bg 2.5s ease-in-out;
+  background-color: #813eac;
+}
+
+.modalClose{
+  display: none;
+}
+
+.bg div {
+  display: grid;
+  color: white;
+  font-size: 30px;
+  margin: 20px;
+}
+
+.bg div input[type="text"],input[type="email"],input[type="num"],input[type="password"] {
+  border: none;
+  border-bottom: 1px solid white;
+  background: transparent;
+  height: 30px;
+  width: 100%;
+  color: #dbd1e6;
+  font-size: 20px;
+  transition: height 0.5s;
+}
+
+.bg div input[type="text"]:focus,input[type="num"]:focus,input[type="email"]:focus,input[type="password"]:focus {
+  outline: none;
+  height: 40px;
+}
+
+
+.bg div input[type="submit"]{
+  background-color: #382843d1;
+  border: none;
+  color: #9c79ac;
+  font-size: 1rem;
+  height: 40px;
+  cursor: pointer;
+}
+
+.bg div>label {
+  font-size: 18px;
+}
+
+form {
+  margin: auto;
+  width: 70%;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.nam{
+  font-family: 'Lobster', cursive;
+  font-weight: 200;
+  font-size: 40px;
+  text-align: center;
+}
+
+.bg div.link{
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  font-size: 23px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Roboto', sans-serif;
+}
+
+.bg div.link a{
+  cursor: pointer;
+}
+
+.bg button{
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  border: none;
+  background-color: #431b5e;
+  color: white;
+  position: absolute;
+  right: -12px;
+  top: -17px;
+  box-shadow: 8px 7px 0px rgba(0, 0, 0, 0.64), -8px -4px 0px rgba(0, 0, 0, 0.64);
+  transition: box-shadow 1s;
+}
+
+.bg button:hover{
+  box-shadow: 10px 9px 0px rgba(0, 0, 0, 0.64), -10px -6px 0px rgba(0, 0, 0, 0.64);
+}
