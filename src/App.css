@@ -85,7 +85,7 @@ body {
 }
 
 .icon>li {
-  padding: 2rem;
+  padding: 0.8rem;
   border: 1px solid;
   margin: 10px 15px;
   -webkit-transition: transform 1s;
@@ -96,7 +96,7 @@ body {
 }
 
 .icon > li > a{
-  font-size: 1.9rem;
+  font-size: 1rem;
   font-family: 'Poiret One', cursive;
   font-weight: 600;
 }
