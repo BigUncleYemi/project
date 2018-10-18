@@ -35,11 +35,9 @@
     this.setState({ isLoading: true });
     try {
       const { username, email, password } = this.state;
-      console.log(username, email)
       const newUser = await Auth.signUp({ username, password, attributes:{email} });
       this.setState({ newUser });
     } catch (e) {
-      console.log(e)
       alert(e.message);
     }
     this.setState({ isLoading: false });

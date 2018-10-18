@@ -26,7 +26,6 @@ class SignIn extends React.Component {
     this.setState({ isLoading: true });
  		try {
       const { username, password } = this.state;
-      console.log(username)
 			await Auth.signIn( username, password);
       this.props.userHasAuthenticated(true);
       this.props.handleClose(event, 'bg')
