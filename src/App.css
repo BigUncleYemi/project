@@ -284,3 +284,27 @@ form {
 .bg button:hover{
   box-shadow: 10px 9px 0px rgba(0, 0, 0, 0.64), -10px -6px 0px rgba(0, 0, 0, 0.64);
 }
+
+
+@media only screen and (max-width: 600px) {
+  bg {
+    width: 235px;
+    height: 440px;
+  }
+  #intro > h1{
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  #intro > p{
+    font-size: 1.9rem;
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+  .icon > li {
+    padding: 0.5rem;
+  }
+  .icons > li {
+    padding: 1rem;
+    margin-top: 0;
+  }
+}
