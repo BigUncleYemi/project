@@ -4,7 +4,7 @@ body {
 }
 
 .wrapper {
-  background-image: url('http://exfi.info/wp-content/uploads/2018/08/lake-sweden-autumn-sunset-wallpaper-hd-elegant-landscape-4k-ultra-hd-wallpaper-of-lake-sweden-autumn-sunset-wallpaper-hd.jpg');
+  background-image: url('./assest/img-1.jpg');
   min-height: 100vh;
   overflow-y: auto;
   background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body {
 }
 
 #overlay {
-  background-image: url('https://html5up.net/uploads/demos/aerial/assets/css/images/overlay-pattern.png'), url('https://html5up.net/uploads/demos/aerial/assets/css/images/overlay.svg');
+  background-image: url('./assest/img-2.png'), url('./assest/overlay.svg');
   background-color: #2b0f4391;
   background-position: top left, center center;
   height: 100%;
